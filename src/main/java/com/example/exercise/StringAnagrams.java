@@ -17,6 +17,9 @@ public class StringAnagrams {
     }
 
     private static boolean isAnagram2(String word, String anagram){
+        if(word.length() != anagram.length()){
+            return false;
+        }
         char[] str1Chars = word.toCharArray();
         char[] str2Chars = anagram.toCharArray();
         Arrays.sort(str1Chars);
