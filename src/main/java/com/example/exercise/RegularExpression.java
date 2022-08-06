@@ -47,5 +47,12 @@ public class RegularExpression {
             System.out.println(matcher.group(0));
         }
 
+        //Find if given string is alphanumeric
+        System.out.println(String.format("Input: %s, Pattern: %s, Match: %s",
+                "corre23ction4", "[a-zA-Z1-9]+", Pattern.matches("[a-z1-9]+", "corre23ction4")));//true
+
+        //n{x}	Matches any string that contains a sequence of X n's
+        //^	Finds a match as the beginning of a string as in: ^Hello
+        //$	Finds a match at the end of the string as in: World$
     }
 }
