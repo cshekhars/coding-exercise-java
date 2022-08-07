@@ -13,6 +13,7 @@ public class TwoSumNumbers {
         int[] result = twoSum(array, target);
         System.out.println(Arrays.toString(result));
     }
+    //Time complexity: O(n*log(n))
     public static int[] twoSum(int[] nums, int target) {
         Arrays.sort(nums);
         int low =0;
